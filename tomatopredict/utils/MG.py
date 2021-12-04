@@ -1,9 +1,8 @@
-from Base_données.DBMongo import get_client_mongodb
+from db.DBMongo import get_client_mongodb
 import dns
 import pymongo
 import pandas as pd
 import os
-
 
 
 def day():

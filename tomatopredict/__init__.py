@@ -1,5 +1,5 @@
 
-from flask import Flask, redirect, render_template, flash, url_for
+from flask import Flask, redirect, render_template, flash, url_for, g
 import flask_monitoringdashboard as dashboard
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
@@ -11,16 +11,34 @@ from flask_bcrypt import Bcrypt
 from werkzeug.security import generate_password_hash
 import os
 import sqlite3
-from flask import g
+import views
+import config
 
-
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'you-will-never_guess'
-
+db = SQLAlchemy()
+bcrypt = Bcrypt()
+login_manager = LoginManager()
+login_manager.login_view = 'users.login'
+login_manager.login_message_category = 'info'
+mail = Mail()
+#migrate = Migrate()
+#jwt = JWTManager()
+login = LoginManager()
 
 
 DATABASE = os.path.join(os.getcwd(),'tomatopredict','data','data.db')
+
+
+def create_app(config_class=config):
+    app = Flask(__name__)
+    app.config.from_object(config)
+    db.init_app(app)
+    bcrypt.init_app(app)
+    login_manager.init_app(app)
+    mail.init_app(app)
+
+    
+    # dashboard.bind(app)
+    return app
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -34,38 +52,7 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
-import views
-
-"""db = SQLAlchemy()
-bcrypt = Bcrypt()
-login_manager = LoginManager()
-login_manager.login_view = 'users.login'
-login_manager.login_message_category = 'info'
-mail = Mail()
-migrate = Migrate()
-jwt = JWTManager()
-login = LoginManager()
-
-
-def create_app(config_class=Config):
-    app = Flask(__name__)
-    app.config.from_object(Config)
-    db.init_app(app)
-    bcrypt.init_app(app)
-    login_manager.init_app(app)
-    mail.init_app(app)
-
-    initialize_extensions(app)
-    #register_blueprints(app)
-    dashboard.bind(app)
-    return app
-
-def initialize_extensions(app):
-    db.init_app(app)
-    migrate.init_app(app, db)
-    login.init_app(app)
-    jwt.init_app(app)
-    mail.init_app(app)"""
+    
 
 
     

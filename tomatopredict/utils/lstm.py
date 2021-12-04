@@ -10,9 +10,9 @@ import numpy as np
 import os
 import dataframe_image as dfi
 
-mod3 = load_model('prediction_prix_tomate_lstm_model_v1.h5')
+mod3 = load_model(r'tomatopredict\models\prediction_prix_tomate_lstm_model_v1.h5')
 
-mod4 = load_model('prediction_production_tomate_lstm_model_v1.h5')
+mod4 = load_model(r'tomatopredict\models\prediction_production_tomate_lstm_model_v1.h5')
 
 D1 = pd.read_csv("./DATA/TMN.csv", parse_dates=['Date'], dayfirst= True)
 D1.sort_values(by=['Date'], inplace=True, ascending=True) 

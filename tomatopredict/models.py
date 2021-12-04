@@ -1,5 +1,4 @@
 from datetime import datetime
-from app import db, login_manager  
 from time import time
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
