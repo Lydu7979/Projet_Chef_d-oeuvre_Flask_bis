@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class=container>
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-center">Number of days for prediction</h1>
+            <form action = "/data-viz" method = "POST"> 
+                <div class="form-group">
+                  <label for="nbdays">Input the number of days for the predictions (1-30) </label>
+                  <input type="number" min="1" max="30" name="nbd" value="7" class="form-control" id="nbdays" placeholder="Number of days">
+                </div>
+              <h5>Which graph do you want to see?</h5>
+                <div class="radio">
+                  <label><input type="radio" name="optradio1"> Graph(Price and Production)</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio2"> Graph(Price only)</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio3"> Graph(Production only)</label>
+                </div>
+              <h5>Predictions for the price and production of tomatoes</h5>
+              <h6>predictions with ARIMA for price</h6>
+              <div class="radio">
+                <label><input type="radio" name="optradio11"> predicted_values_table</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio12"> predicted_values_graph</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio13"> all_values_table</label>
+              </div>
+              <h6>predictions with ARIMA for prodcution</h6>
+              <div class="radio">
+                <label><input type="radio" name="optradio14"> predicted_values_table</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio15"> predicted_values_graph</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio16"> all_values_table</label>
+              </div>
+              <h6>predictions with LSTM for price</h6>
+              <div class="radio">
+                <label><input type="radio" name="optradio21"> predicted_values_table</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio22"> predicted_values_graph</label>
+              </div>
+              <h6>predictions with LSTM for production</h6>
+              <div class="radio">
+                <label><input type="radio" name="optradio23"> predicted_values_table</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio24"> predicted_values_graph</label>
+              </div>
+
+               <!-- <div class="radio">
+                  <label><input type="radio" name="optradio"> predictions with ARIMA</label>                     
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio"> predictions with LSTM</label>
+                </div> -->
+                <button type="submit" class="btn btn-default">Submit</button> 
+             </form>
+            <br>
+            
+        </div>
+        {% if flag!='Nok' %}
+        <div class="col-md-6">
+          <input type="image" src="{{url_for('static', filename='images/'+graph)}}" alt="Graph" >
+          <div style="display: flex;">
+            <div>
+             {{ table_prix|safe }} 
+          </div>
+          <div class="ml-2">
+            {{ table_prod|safe }}
+          </div>
+        </div>
+          
+        </div>
+        {% else %}
+        Pick a graph or a table 
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+

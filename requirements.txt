@@ -1,0 +1,13 @@
+Flask==1.0
+Flask-Bcrypt==0.7.1
+Flask-Login==0.4.1
+Flask-Mail==0.9.1
+Flask-SQLAlchemy==2.3.2
+Flask-WTF==0.14.2
+numpy==1.17.0
+pandas==0.25.0
+pytest
+statsmodels
+hashlib
+sqlite3
+keras 
