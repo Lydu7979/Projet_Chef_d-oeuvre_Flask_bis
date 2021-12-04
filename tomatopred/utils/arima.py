@@ -1,4 +1,4 @@
-from utils.MG import data_prix, data_pro, day
+from tomatopred.utils.MG import data_prix, data_pro, day
 import pickle
 from datetime import date
 import time
@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 import os
 import dataframe_image as dfi
 
-mod = pickle.load(open(r'tomatopredict\models\modèle_ARIMA_Prix3.pkl', 'rb'))
+mod = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Prix3.pkl', 'rb'))
 			
-mod2 = pickle.load(open(r'tomatopredict\models\modèle_ARIMA_Production3.pkl', 'rb'))
+mod2 = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Production3.pkl', 'rb'))
 
 #prix
 def prix_a(nbd):
@@ -29,20 +29,20 @@ def pro_a(nbd):
 #Prédiction du prix
 
 def predict_prix_ARIMA(df_forecast):
-    chemin4 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(price)_table(ARIMA).png')
+    chemin4 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(price)_table(ARIMA).png')
     #df_forecast.savefig(chemin4)
     dfi.export(df_forecast, chemin4)
     return 'predicted_values(price)_table(ARIMA).png'
 
 def graph_prix_ARIMA1(df_forecast):
     fig12 = plt.figure(figsize=(10,5))
-    plt.plot(df_forecast, label="production (valeurs prédites)", color = 'darkviolet')
+    plt.plot(df_forecast, label="prix (valeurs prédites)", color = 'darkviolet')
     plt.title("Représentation du prix pour les données prédites")
     plt.xlabel("Jour")
     plt.ylabel("Prix")
     plt.legend(loc="upper right")
     plt.grid(True)
-    chemin5 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(price)_graph(ARIMA).png')
+    chemin5 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(price)_graph(ARIMA).png')
     fig12.savefig(chemin5)
     return 'predicted_values(price)_graph(ARIMA).png'
 
@@ -55,7 +55,7 @@ def graph_prix_ARIMA2(df_forecast):
     plt.ylabel("Prix")
     plt.legend(loc="upper right")
     plt.grid(True)
-    chemin6 = os.path.join(os.getcwd(),'tomatopredict','static','images','all_values(price)_graph(ARIMA).png')
+    chemin6 = os.path.join(os.getcwd(),'tomatopred','static','images','all_values(price)_graph(ARIMA).png')
     fig13.savefig(chemin6)
     return 'all_values(price)_graph(ARIMA).png'
     
@@ -63,7 +63,7 @@ def graph_prix_ARIMA2(df_forecast):
 #Prédiction de la production
 
 def predict_production_ARIMA(df_forecast2):
-    chemin7 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(production)_table(ARIMA).png')
+    chemin7 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(production)_table(ARIMA).png')
     #df_forecast2.savefig(chemin7)
     dfi.export(df_forecast2, chemin7)
     return 'predicted_values(production)_table(ARIMA).png'
@@ -76,7 +76,7 @@ def graph_pro_ARIMA1(df_forecast2):
     plt.ylabel("Prix")
     plt.legend(loc="upper right")
     plt.grid(True)
-    chemin8 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(production)_graph(ARIMA).png')
+    chemin8 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(production)_graph(ARIMA).png')
     fig14.savefig(chemin8)
     return 'predicted_values(production)_graph(ARIMA).png'
 
@@ -89,6 +89,6 @@ def graph_pro_ARIMA2(df_forecast2):
     plt.ylabel("Production")
     plt.legend(loc="upper right")
     plt.grid(True)
-    chemin9 = os.path.join(os.getcwd(),'tomatopredict','static','images','all_values(production)_graph(ARIMA).png')
+    chemin9 = os.path.join(os.getcwd(),'tomatopred','static','images','all_values(production)_graph(ARIMA).png')
     fig15.savefig(chemin9)
     return 'all_values(production)_graph(ARIMA).png'

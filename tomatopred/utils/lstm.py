@@ -1,4 +1,4 @@
-from utils.MG import data_prix, data_pro, day, data
+from tomatopred.utils.MG import data_prix, data_pro, day, data
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 from keras.models import load_model
@@ -10,11 +10,11 @@ import numpy as np
 import os
 import dataframe_image as dfi
 
-mod3 = load_model(r'tomatopredict\models\prediction_prix_tomate_lstm_model_v1.h5')
+mod3 = load_model(r'tomatopred\models\prediction_prix_tomate_lstm_model_v1.h5')
 
-mod4 = load_model(r'tomatopredict\models\prediction_production_tomate_lstm_model_v1.h5')
-
-D1 = pd.read_csv("./DATA/TMN.csv", parse_dates=['Date'], dayfirst= True)
+mod4 = load_model(r'tomatopred\models\prediction_production_tomate_lstm_model_v1.h5')
+chemin = os.path.join(os.getcwd(),'tomatopred','static','data','TMN.csv')
+D1 = pd.read_csv(chemin, parse_dates=['Date'], dayfirst= True)
 D1.sort_values(by=['Date'], inplace=True, ascending=True) 
 D1 =  D1.set_index(['Date'])
 D2 = D1.resample("D").mean()
@@ -54,13 +54,13 @@ def pred_prix_lstm(nbd):
     return Ppi
 
 def table_price_lstm(Ppi):
-    chemin12 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(price)_table(LSTM).png')
+    chemin12 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(price)_table(LSTM).png')
     dfi.export(Ppi, chemin12)
     return ('predicted_values(price)_table(LSTM).png')
 
 def graph_price_lstm(Ppi):
     Ppi2 = Ppi.plot(title = 'Prédiction du prix (valeurs prédites en fontion du nombre de jours choisis)')
-    chemin10 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(price)_graph(LSTM).png')
+    chemin10 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(price)_graph(LSTM).png')
     Ppi2.savefig(chemin10)
     return ('predicted_values(price)_graph(LSTM).png')
 
@@ -98,13 +98,13 @@ def pred_pro_lstm(nbd):
     return Po
 
 def table_prod_lstm(Po):
-    chemin13 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(production)_table(LSTM).png')
+    chemin13 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(production)_table(LSTM).png')
     dfi.export(Po, chemin13)
     return ('predicted_values(production)_table(LSTM).png')
 
 def graph_prod_lstm(Po):
     Po2 = Po.plot(title = 'Prédiction de la prédiction (valeurs prédites en fontion du nombre de jours choisis)')
-    chemin11 = os.path.join(os.getcwd(),'tomatopredict','static','images','predicted_values(production)_graph(LSTM).png')
+    chemin11 = os.path.join(os.getcwd(),'tomatopred','static','images','predicted_values(production)_graph(LSTM).png')
     Po2.savefig(chemin11)
     return ('predicted_values(production)_graph(LSTM).png')
     

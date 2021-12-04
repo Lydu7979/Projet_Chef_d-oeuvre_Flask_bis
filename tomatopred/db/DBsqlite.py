@@ -2,7 +2,7 @@
 import sqlite3
 import os
 
-DATABASE = os.path.join(os.getcwd(),'tomatopredict','data','data.db')
+DATABASE = os.path.join(os.getcwd(),'tomatopred','data','data.db')
 #c = co.cursor() 
 def create_usertable():
 	co = sqlite3.connect(DATABASE)
@@ -11,8 +11,9 @@ def create_usertable():
 	c.close()
 
 
-def add_userdata(username,password, email):
-	co = sqlite3.connect("data.db")
+
+def add_userdata(username,password,email):
+	co = sqlite3.connect(DATABASE)
 	c = co.cursor()
 	c.execute('INSERT INTO userstable(username,password, email) VALUES (?,?,?)',(username,password,email))
 
@@ -20,7 +21,7 @@ def add_userdata(username,password, email):
 	c.close()
 
 def login_user(username,password,email)->list:
-	co = sqlite3.connect("data.db")
+	co = sqlite3.connect(DATABASE)
 	c = co.cursor()
 	c.execute('SELECT * FROM userstable WHERE username =? AND password = ? AND email = ?',(username,password,email))
 	data = c.fetchall()
@@ -28,7 +29,7 @@ def login_user(username,password,email)->list:
 	return data
 
 def view_all_users():
-	co = sqlite3.connect("data.db")
+	co = sqlite3.connect(DATABASE)
 	c = co.cursor()
 	c.execute('SELECT * FROM usertable')
 	data = c.fetchall()

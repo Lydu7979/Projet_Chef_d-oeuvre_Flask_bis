@@ -1,9 +1,16 @@
-from db.DBMongo import get_client_mongodb
+import sys
+sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/')
 import dns
 import pymongo
 import pandas as pd
 import os
 
+def get_client_mongodb(user_name = "Thmo89",psw = "Authentication "):
+    
+    uri2 = "mongodb+srv://{}:{}@cluster1.mknx2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority&tls=true&tlsAllowInvalidCertificates=true".format(user_name, psw)
+
+    client = pymongo.MongoClient(uri2)
+    return client
 
 def day():
     n = input("Choose the number of days for predictions, between 1 and 30:")
@@ -20,13 +27,13 @@ def mg():
     return Dat
 
 def data():
-    chemin = os.path.join(os.getcwd(),'tomatopredict','static','data','TMN.csv')
+    chemin = os.path.join(os.getcwd(),'tomatopred','static','data','TMN.csv')
     print(chemin)
     i = mg()
-    DT = pd.DataFrame(i, columns = ['Date', 'prix moyen au kg', 'Production quantité \ntonne(s)', 'Température minimale en °C', 
-                              'Température maximale en °C', 'précipitations en mm','Ensoleillement en min', 'Rafales (vitesse du vent) en km/h','catégorie tomates'])
-    DT.rename(columns={"Production quantité \ntonne(s)": "Production quantité tonne(s)"},inplace=True)
-    DT.to_csv(chemin,index = False)
+    # DT = pd.DataFrame(i, columns = ['Date', 'prix moyen au kg', 'Production quantité \ntonne(s)', 'Température minimale en °C', 
+    #                           'Température maximale en °C', 'précipitations en mm','Ensoleillement en min', 'Rafales (vitesse du vent) en km/h','catégorie tomates'])
+    # DT.rename(columns={"Production quantité \ntonne(s)": "Production quantité tonne(s)"},inplace=True)
+    # DT.to_csv(chemin,index = False)
     Pop = pd.read_csv(chemin, parse_dates=['Date'], dayfirst= True)
     Pop.sort_values(by=['Date'], inplace=True, ascending=True) 
     Pop =  Pop.set_index(['Date'])
