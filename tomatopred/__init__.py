@@ -31,9 +31,9 @@ mail = Mail()
 DATABASE = os.path.join(os.getcwd(),'tomatopred','data','data.db')
 
 
-def create_app(config_class=config):
+def create_app(config_class=config.Baseconfig):
     app = Flask(__name__)
-    app.config.from_object(config)
+    app.config.from_object(config.Baseconfig)
     db.init_app(app)
     bcrypt.init_app(app)
     # login_manager.init_app(app)

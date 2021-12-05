@@ -9,6 +9,7 @@ from tomatopred import db
 import sqlite3
 import os
 
+
 tomatoapp = Blueprint('tomatoapp',__name__)
 
 # @tomatoapp.before_app_first_request
@@ -75,13 +76,13 @@ def essai():
     tapricea = predict_prix_ARIMA(tabprixa)
     taproda = predict_production_ARIMA(tabproa)
     #lstm
-    tabprixl = pred_prix_lstm(int(nbd))
-    tabprol = pred_pro_lstm(int(nbd))
-    print(tabprixl)
-    tpril= table_price_lstm(tabprixl)
-    gpril = graph_price_lstm(tabprixl)
-    tprol = table_prod_lstm(tabprol)
-    gprol = graph_prod_lstm(tabprol)
+    # tabprixl = pred_prix_lstm(int(nbd))
+    # tabprol = pred_pro_lstm(int(nbd))
+    # print(tabprixl)
+    # tpril= table_price_lstm(tabprixl)
+    # gpril = graph_price_lstm(tabprixl)
+    # tprol = table_prod_lstm(tabprol)
+    # gprol = graph_prod_lstm(tabprol)
     optradio1 = request.form.get('optradio1')
     print(optradio1)
     optradio2 = request.form.get('optradio2')
@@ -100,14 +101,15 @@ def essai():
     print(optradio15)
     optradio16 = request.form.get('optradio16')
     print(optradio16)
-    optradio21 = request.form.get('optradio21')
-    print(optradio21)
-    optradio22 = request.form.get('optradio22')
-    print(optradio22)
-    optradio23 = request.form.get('optradio23')
-    print(optradio23)
-    optradio24 = request.form.get('optradio24')
-    print(optradio24)
+    # optradio21 = request.form.get('optradio21')
+    # print(optradio21)
+    # optradio22 = request.form.get('optradio22')
+    # print(optradio22)
+    # optradio23 = request.form.get('optradio23')
+    # print(optradio23)
+    # optradio24 = request.form.get('optradio24')
+    # print(optradio24)
+    global g1
     if optradio1 == "on":
         g1 = data_viz_1.graph_u()
     elif optradio2 == "on":
@@ -126,14 +128,14 @@ def essai():
         g1 = graph_proda1
     elif optradio16 == "on":
         g1 = graph_proda2
-    elif optradio21 == "on":
-        tabprix =  tpril
-    elif optradio22 == "on":
-        g1 = gpril
-    elif optradio23 == "on":
-        tabpro = tprol
-    elif optradio24 == "on":
-        g1 = gprol   
+    # elif optradio21 == "on":
+    #     tabprix =  tpril
+    # elif optradio22 == "on":
+    #     g1 = gpril
+    # elif optradio23 == "on":
+    #     tabpro = tprol
+    # elif optradio24 == "on":
+    #     g1 = gprol   
     else:
         return render_template('application.html', graph = "Nok", flag = "Nok")
     return render_template('application.html', graph = g1, table_prix = tabprix.to_html() , table_prod = tabpro.to_html())
