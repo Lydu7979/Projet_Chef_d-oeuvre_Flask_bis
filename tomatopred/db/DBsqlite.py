@@ -7,10 +7,8 @@ DATABASE = os.path.join(os.getcwd(),'tomatopred','data','data.db')
 def create_usertable():
 	co = sqlite3.connect(DATABASE)
 	c = co.cursor()
-	c.execute('CREATE TABLE IF NOT EXISTS userstable(id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,password TEXT, email TEXT)')
+	c.execute('CREATE TABLE IF NOT EXISTS userstable(id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT NOT NULL, password TEXT NOT NULL,email TEXT NOT NULL UNIQUE,created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)')
 	c.close()
-
-
 
 def add_userdata(username,password,email):
 	co = sqlite3.connect(DATABASE)
