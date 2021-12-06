@@ -117,25 +117,25 @@ def essai():
     elif optradio3 == "on":
         g1 = data_viz_1.graph_pro()
     elif optradio11 == "on":
-        tabprix = tapricea
+        t1 = tapricea
     elif optradio12 == "on":
         g1 = graph_pricea1
     elif optradio13 == "on":
         g1 = graph_pricea2
     elif optradio14 == "on":
-        tabpro = taproda
+        t2 = taproda
     elif optradio15 == "on":
         g1 = graph_proda1
     elif optradio16 == "on":
         g1 = graph_proda2
     # elif optradio21 == "on":
-    #     tabprix =  tpril
+    #     t1 =  tpril
     # elif optradio22 == "on":
     #     g1 = gpril
     # elif optradio23 == "on":
-    #     tabpro = tprol
+    #     t2 = tprol
     # elif optradio24 == "on":
     #     g1 = gprol   
     else:
         return render_template('application.html', graph = "Nok", flag = "Nok")
-    return render_template('application.html', graph = g1, table_prix = tabprix.to_html() , table_prod = tabpro.to_html())
+    return render_template('application.html', graph = g1, table_prix = t1.to_html() , table_prod = t2.to_html())

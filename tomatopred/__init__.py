@@ -15,6 +15,8 @@ import sys
 sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/')
 import tomatopred.views
 import config
+from . import db
+
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()

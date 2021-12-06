@@ -1,8 +1,9 @@
 import sqlite3
-from flask import g
+import click
+from flask import current_app, g, Flask
+from flask.cli import with_appcontext
 import os
 
-from flask.app import Flask
 
 app = Flask(__name__)
 DATABASE = os.path.join(os.getcwd(),'tomatopred','data','data.db')
@@ -22,11 +23,15 @@ def close_connection(exception):
 def init_db():
     db = get_db()
     with app.open_resource('schema.sql', mode='r') as f:
-        db.cursor().executescript(f.read())
+        db.executescript(f.read().decode('utf8'))
     db.commit()
-
-@app.cli.command('initdb')
-def initdb_command():
+    
+@app.cli.command('init_db')
+def init_db_command():
     """Initializes the database."""
     init_db()
     print('Initialized the database.')
+
+def init_app(app):
+    app.teardown_appcontext(close_connection)
+    app.cli.add_command(init_db_command)
