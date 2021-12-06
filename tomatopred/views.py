@@ -1,10 +1,11 @@
+# from types import _T1
 from tomatopred.db import get_db
 from flask import request, render_template, redirect, url_for, flash, Flask, Blueprint
 from forms import RegisterForm, LoginForm
 from tomatopred.utils import data_viz_1
 from tomatopred.utils.MG import mg
 from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_ARIMA2, graph_pro_ARIMA1, graph_pro_ARIMA2, predict_prix_ARIMA, predict_production_ARIMA
-from tomatopred.utils.lstm import pred_prix_lstm, pred_pro_lstm, graph_price_lstm, table_price_lstm, graph_prod_lstm,  table_prod_lstm
+
 from tomatopred import db
 import sqlite3
 import os
@@ -19,13 +20,34 @@ tomatoapp = Blueprint('tomatoapp',__name__)
 #     c = co.cursor()
 #     c.execute('CREATE TABLE IF NOT EXISTS userstable(id INTEGER, username TEXT,password TEXT, email TEXT, PRIMARY KEY(id))')
 #     c.close()
-
-
+global g1
+global t1
+global t2
 @tomatoapp.route("/")
 def index():
     cur = get_db().cursor()
     print(cur)
     return render_template('base.html')
+
+def query_db(query, args=(), one=False):
+    cur = get_db().execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
+
+@tomatoapp.route('/testdb', methods = ["GET"])
+def test_db():
+    print(query_db("select * from usertable"))
+    cur = get_db().cursor()
+    username = "CocoCocoCococ"
+    password = "Ftfdoeoenbeb"
+    email = "Croc@yahoo.fr"
+    cur.execute('INSERT INTO userstable(username,password, email) VALUES (?,?,?)',(username,password,email))
+    cur.close()
+    print(query_db("select * from usertable"))
+    return render_template('base.html')
+	# co.commit()
 
 
 @tomatoapp.route('/signin', methods=['GET', 'POST'])
@@ -61,6 +83,7 @@ def application():
     g1 = data_viz_1.graph_u()
     return render_template('application.html', graph = g1)
 
+
 @tomatoapp.route('/data-viz', methods = ['GET', 'POST'])
 def essai():
     nbd = request.form.get('nbd')
@@ -75,6 +98,7 @@ def essai():
     graph_proda2 = graph_pro_ARIMA2(tabproa)
     tapricea = predict_prix_ARIMA(tabprixa)
     taproda = predict_production_ARIMA(tabproa)
+    
     #lstm
     # tabprixl = pred_prix_lstm(int(nbd))
     # tabprol = pred_pro_lstm(int(nbd))
@@ -109,7 +133,6 @@ def essai():
     # print(optradio23)
     # optradio24 = request.form.get('optradio24')
     # print(optradio24)
-    global g1
     if optradio1 == "on":
         g1 = data_viz_1.graph_u()
     elif optradio2 == "on":

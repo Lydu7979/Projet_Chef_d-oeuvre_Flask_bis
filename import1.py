@@ -424,3 +424,99 @@ mod = pickle.load(open('modèle_ARIMA_Prix3.pkl', 'rb'))
 mod2 = pickle.load(open('modèle_ARIMA_Production3.pkl', 'rb'))
 mod3 = load_model('prediction_prix_tomate_lstm_model_v1.h5')
 mod4 = load_model('prediction_production_tomate_lstm_model_v1.h5')
+
+from tomatopred.utils.lstm import pred_prix_lstm, pred_pro_lstm, graph_price_lstm, table_price_lstm, graph_prod_lstm,  table_prod_lstm
+
+
+
+from flask import Flask
+# # import flask_monitoringdashboard as dashboard
+# # from flask_sqlalchemy import SQLAlchemy
+# # from flask_login import LoginManager
+# #from flask_migrate import Migrate
+# #from flask_jwt_extended import JWTManager
+# #from flask_wtf.csrf import CSRFProtect
+# # from flask_mail import Mail
+# # from flask_bcrypt import Bcrypt
+# # from werkzeug.security import generate_password_hash
+import os
+# import sqlite3
+# # import sys
+# # sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/')
+import tomatopred.views
+# import config
+# # from . import db
+
+
+# # db = SQLAlchemy()
+# # bcrypt = Bcrypt()
+# # login_manager = LoginManager(app)
+# # login_manager.init_app(app)
+# # login_manager.login_view = 'users.login'
+# # login_manager.login_message_category = 'info'
+# # mail = Mail()
+# #migrate = Migrate()
+# #jwt = JWTManager()
+# # login = LoginManager()
+
+
+# # DATABASE = os.path.join(os.getcwd(),'tomatopred','data','data.db')
+
+
+# def create_app(config_class=config.Baseconfig):
+#     app = Flask(__name__)
+#     # app.config.from_object(config.Baseconfig)
+#     # db.init_app(app)
+#     # bcrypt.init_app(app)
+#     # login_manager.init_app(app)
+#     # mail.init_app(app)
+#     register_blueprint(app)
+
+    
+#     # dashboard.bind(app)
+
+#     # @app.teardown_appcontext
+#     # def close_connection(exception):
+#     #     db = getattr(g, '_database', None)
+#     #     if db is not None:
+#     #         db.close()
+
+#     return app
+
+# # def get_db():
+# #     db = getattr(g, '_database', None)
+# #     if db is None:
+# #         db = g._database = sqlite3.connect(DATABASE)
+# #     return db
+
+# def register_blueprint(app):
+#     from tomatopred.views import tomatoapp
+    
+#     app.register_blueprint(tomatoapp)
+    
+# DATABASE = os.path.join(os.getcwd(),'tomatopred','data','data.db')
+
+# def get_db():
+#     db = getattr(g, '_database', None)
+#     if db is None:
+#         db = g._database = sqlite3.connect(DATABASE)
+#     return db
+
+# @app.teardown_appcontext
+# def close_connection(exception):
+#     db = getattr(g, '_database', None)
+#     if db is not None:
+#         db.close()
+
+
+# def init_db():
+#     db = get_db()
+#     with app.open_resource('schema.sql', mode='r') as f:
+#         db.executescript(f.read().decode('utf8'))
+#     db.commit()
+    
+# @app.cli.command('init_db')
+# def init_db_command():
+#     """Initializes the database."""
+#     init_db()
+#     print('Initialized the database.')
