@@ -11,3 +11,26 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Forma
 INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\MG.py', reloading
 INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\arima.py', reloading
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:46:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:46:20] "GET /auth/register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:47:41] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:47:42] "GET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:47:42] "GET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:47:42] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pyparsing.py', reloading
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:49:30] "GET /auth/login HTTP/1.1" 200 -
+WARNING:root:Put a correct username
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:50:01] "POST /auth/login HTTP/1.1" 200 -
+WARNING:root:Put a correct username
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:50:08] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:52:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:53:01] "GET /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:53:43] "[32mPOST /auth/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:53:43] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:53:57] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:54:02] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:54:03] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 15:54:52] "[33mPOST /data-viz HTTP/1.1[0m" 404 -
