@@ -6,6 +6,7 @@ from flask import (
 from werkzeug.security import check_password_hash, generate_password_hash
 from forms import RegisterForm, LoginForm
 from tomatopred.db import get_db
+import logging
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 

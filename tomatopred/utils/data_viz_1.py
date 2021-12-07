@@ -18,6 +18,7 @@ def graph_u():
     plt.legend(loc="upper right")
     plt.grid(True)
     chemin = os.path.join(os.getcwd(),'tomatopred','static','images','price_and_production.png')
+    print(chemin)
     fig.savefig(chemin)
     return 'price_and_production.png'
 
@@ -30,6 +31,7 @@ def graph_prix():
     plt.legend(loc="upper right")
     plt.grid(True)
     chemin2 = os.path.join(os.getcwd(),'tomatopred','static','images','price.png')
+    print(chemin2)
     fig2.savefig(chemin2)
     return 'price.png'
 
@@ -42,6 +44,7 @@ def graph_pro():
     plt.legend(loc="upper right")
     plt.grid(True)
     chemin3 = os.path.join(os.getcwd(),'tomatopred','static','images','production.png')
+    print(chemin3)
     fig3.savefig(chemin3)
     return 'production.png'
     
