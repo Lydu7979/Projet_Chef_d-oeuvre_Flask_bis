@@ -1,4 +1,6 @@
 DROP TABLE IF EXISTS userstable;
+DROP TABLE IF EXISTS models;
+DROP TABLE IF EXISTS predictions;
 
 
 CREATE TABLE usertable (
@@ -7,4 +9,20 @@ CREATE TABLE usertable (
     password TEXT NOT NULL,
     email TEXT NOT NULL UNIQUE,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE models (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fichier_model TEXT NOT NULL,
+    metrics TEXT NOT NULL,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE prediction (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_user INTEGER NOT NULL,
+    id_models INTEGER NOT NULL,
+    pred_prix INTEGER NOT NULL ,
+    pred_pro  INTEGER NOT NULL,
+    FOREIGN KEY (id_user, id_models) REFERENCES user (id)
 );

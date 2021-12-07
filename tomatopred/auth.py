@@ -7,6 +7,8 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from forms import RegisterForm, LoginForm
 from tomatopred.db import get_db
 import logging
+logging.basicConfig(filename='demo.log')
+logging.debug('This message should go to the log file')
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
@@ -22,10 +24,13 @@ def register():
 
         if not username:
             error = 'Username is required.'
+            logging.error('Username is required.')
         elif not password:
             error = 'Password is required.'
+            logging.error('Password is required.')
         elif not email:
             error = 'Email is required.'
+            logging.error('Email is required.')
 
         if error is None:
             try:
@@ -36,6 +41,7 @@ def register():
                 db.commit()
             except db.IntegrityError:
                 error = f"User {username} is already registered."
+                logging.error('User already registered.')
             else:
                 return redirect(url_for("auth.login"))
 
@@ -58,8 +64,10 @@ def login():
 
         if user is None:
             error = 'Incorrect username.'
+            logging.warning('Put a correct username')
         elif not check_password_hash(user['password'], password):
             error = 'Incorrect password.'
+            logging.warning('Put a correct password')
 
         if error is None:
             session.clear()
@@ -80,3 +88,8 @@ def load_logged_in_user():
         g.user = get_db().execute(
             'SELECT * FROM usertable WHERE id = ?', (user_id,)
         ).fetchone()
+
+@bp.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('index'))
