@@ -2,7 +2,8 @@ from tomatopred.utils.MG import data, data_prix, data_pro
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 import os
-
+import matplotlib
+matplotlib.use('Agg')
 D = data()
 data1 = data_prix()
 data2 = data_pro()

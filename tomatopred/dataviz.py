@@ -6,16 +6,19 @@ from flask import (
 from werkzeug.security import check_password_hash, generate_password_hash
 from forms import RegisterForm, LoginForm
 from tomatopred.db import get_db
-from tomatopred.utils import data_viz_1
+from tomatopred.utils.data_viz_1 import graph_u, graph_prix, graph_pro
 from tomatopred.utils.MG import mg
 from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_ARIMA2, graph_pro_ARIMA1, graph_pro_ARIMA2, predict_prix_ARIMA, predict_production_ARIMA
-
+import logging
+logging.basicConfig(filename='demo.log')
+logging.debug('This message should go to the log file')
 
 bp = Blueprint('tomatoappdataviz',__name__)
 
 bp.route('/data-viz', methods = ['GET', 'POST'])
 def essai():
     nbd = request.form.get('nbd')
+    logging.info('Choose a number of days between 1 and 30')
     #arima
     tabprixa = prix_a(int(nbd))
     print(tabprixa)
@@ -36,6 +39,7 @@ def essai():
     # gpril = graph_price_lstm(tabprixl)
     # tprol = table_prod_lstm(tabprol)
     # gprol = graph_prod_lstm(tabprol)
+    logging.info('Click a point to see a graph or a table')
     optradio1 = request.form.get('optradio1')
     print(optradio1)
     optradio2 = request.form.get('optradio2')
@@ -63,11 +67,11 @@ def essai():
     # optradio24 = request.form.get('optradio24')
     # print(optradio24)
     if optradio1 == "on":
-        g1 = data_viz_1.graph_u()
+        g1 = graph_u()
     elif optradio2 == "on":
-        g1 = data_viz_1.graph_prix()
+        g1 = graph_prix()
     elif optradio3 == "on":
-        g1 = data_viz_1.graph_pro()
+        g1 = graph_pro()
     elif optradio11 == "on":
         t1 = tapricea
     elif optradio12 == "on":

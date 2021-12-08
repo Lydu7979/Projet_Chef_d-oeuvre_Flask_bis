@@ -8,6 +8,7 @@ CREATE TABLE usertable (
     username TEXT NOT NULL,
     password TEXT NOT NULL,
     email TEXT NOT NULL UNIQUE,
+    is_admin BOOLEAN DEFAULT FALSE,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
