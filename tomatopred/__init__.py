@@ -13,11 +13,12 @@ def create_app():
     from . import db
     db.init_app(app)
 
-    from . import auth, index, application, dataviz
+    from . import auth, index, application, dataviz, dashboard
     app.register_blueprint(auth.bp)
     app.register_blueprint(index.bp)
     app.register_blueprint(application.bp)
     app.register_blueprint(dataviz.bp)
+    app.register_blueprint(dashboard.bp)
     
 
 

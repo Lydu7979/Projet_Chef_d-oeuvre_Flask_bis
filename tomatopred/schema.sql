@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS userstable;
-DROP TABLE IF EXISTS models;
-DROP TABLE IF EXISTS predictions;
+-- DROP TABLE IF EXISTS userstable;
+-- DROP TABLE IF EXISTS models;
+-- DROP TABLE IF EXISTS predictions;
 
 
-CREATE TABLE usertable (
+CREATE TABLE IF NOT EXISTS usertable (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT NOT NULL,
     password TEXT NOT NULL,
@@ -12,18 +12,18 @@ CREATE TABLE usertable (
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE models (
+CREATE TABLE IF NOT EXISTS models (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fichier_model TEXT NOT NULL,
     metrics TEXT NOT NULL,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE prediction (
+CREATE TABLE IF NOT EXISTS prediction (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     id_user INTEGER NOT NULL,
     id_models INTEGER NOT NULL,
     pred_prix INTEGER NOT NULL ,
     pred_pro  INTEGER NOT NULL,
-    FOREIGN KEY (id_user, id_models) REFERENCES user (id)
+    FOREIGN KEY (id_user) REFERENCES user (id)
 );
