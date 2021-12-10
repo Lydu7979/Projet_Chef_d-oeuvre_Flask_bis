@@ -3,7 +3,9 @@ from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_
 # from app import create_app, db
 # from app.models import UserModel
 # from config import TestingConfig
-
+import sys
+print(sys.path)
+sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
 
 # @pytest.fixture(scope='module')
 # def new_user():
@@ -55,4 +57,6 @@ def test_la():
 def test_prixa():
     a1 = prix_a()
     assert a1 == "RRR", "incorrect DataFrame"
+
+
     

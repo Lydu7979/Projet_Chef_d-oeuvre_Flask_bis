@@ -10,6 +10,7 @@ import logging
 import pandas as pd
 logging.basicConfig(filename='demo.log')
 logging.debug('This message should go to the log file')
+from flask_login import login_required, current_user
 
 bp = Blueprint('dashboardad',__name__)
 
@@ -26,4 +27,12 @@ def admin_user():
 
 
     return render_template('dashboard.html', users  = users.to_html())
-        
+
+
+
+# @bp.route('/dash')
+# def dash():
+#     if not current_user.admin_user():
+#         return render_template('403.html')
+#     return redirect('http://localhost:5000/dashboard/overview')
+

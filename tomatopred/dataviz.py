@@ -21,6 +21,7 @@ def essai():
     nbd = request.form.get('nbd')
     print(session.get('user_id'))
     logging.info('Choose a number of days between 1 and 30')
+    
     #arima
     tabprixa = prix_a(int(nbd))
     tabproa = pro_a(int(nbd))
