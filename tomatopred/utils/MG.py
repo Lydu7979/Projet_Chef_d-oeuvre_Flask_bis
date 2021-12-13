@@ -20,7 +20,7 @@ def day():
 
 def mg():
     client = get_client_mongodb()
-    db = client.Tomates_meteo_Centre11
+    db = client.Tomates_meteo_Centre15
     mycl = db["données"]
     Dat = pd.DataFrame(list(mycl.find()))
     Dat = Dat.drop(columns=["index"])
@@ -30,8 +30,7 @@ def data():
     chemin = os.path.join(os.getcwd(),'tomatopred','static','data','TMN.csv')
     print(chemin)
     i = mg()
-    # DT = pd.DataFrame(i, columns = ['Date', 'prix moyen au kg', 'Production quantité tonne(s)', 'Température minimale en °C', 
-    #                           'Température maximale en °C', 'précipitations en mm','Ensoleillement en min', 'Rafales (vitesse du vent) en km/h','catégorie tomates'])
+    # DT = pd.DataFrame(i, columns = ['Rafale max  help', 'soleil_durée','Précipitations en mm', 'Température minimale en °C','Température maximale en °C', 'prix moyen au kg', 'Production quantité tonne(s)', 'Date'])
     # DT.to_csv(chemin,index = False)
     Pop = pd.read_csv(chemin, parse_dates=['Date'], dayfirst= True)
     Pop.sort_values(by=['Date'], inplace=True, ascending=True) 
