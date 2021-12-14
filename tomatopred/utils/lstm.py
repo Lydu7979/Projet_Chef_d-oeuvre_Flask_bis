@@ -17,15 +17,13 @@ chemin = os.path.join(os.getcwd(),'tomatopred','static','data','TMN.csv')
 D1 = pd.read_csv(chemin, parse_dates=['Date'], dayfirst= True)
 D1.sort_values(by=['Date'], inplace=True, ascending=True) 
 D1 =  D1.set_index(['Date'])
-D2 = D1.resample("D").mean()
-D2 = D2.interpolate()
-Pop3 = D2[['prix moyen au kg','Production quantité tonne(s)']]
+
 
 def pred_prix_lstm(nbd):
     scaler = MinMaxScaler()
     seq = 7 # nombre dobservations dans une séquence
     n_fe = 1 # nombre de features pour le modèle
-    lstm_prix = Pop3.filter(['prix moyen au kg'])
+    lstm_prix = D1['prix moyen au kg']
     x = len(lstm_prix) * 0.7
     train = lstm_prix.iloc[:x]
     test = lstm_prix.iloc[x:]
@@ -66,7 +64,7 @@ def graph_price_lstm(Ppi):
 
 def pred_pro_lstm(nbd):
     scaler2 = MinMaxScaler()
-    lstm_pro = Pop3.filter(['Production quantité tonne(s)'])
+    lstm_pro = D1['Production quantité tonne(s)']
     seq = 7 # nombre dobservations dans une séquence
     n_fe = 1 # nombre de features pour le modèle
     x2 = len(lstm_pro) * 0.7
