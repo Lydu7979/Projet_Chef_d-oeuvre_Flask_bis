@@ -578,3 +578,89 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Forma
 INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\test_u1.py', reloading
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:21:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:21:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:21:24] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:21:35] "GET /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:22:14] "[32mPOST /auth/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:22:14] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:22:24] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:22:25] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:22:25] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:23:28] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:24:50] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:24:50] "GET /static/images/all_values_production_graph_ARIMA_1639653877.348193.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 12:24:50] "[36mGET /static/images/all_values_production_graph_ARIMA_1639653877.348193.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dashboard.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\forms.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 13:05:12] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\models.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\lstm.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 13:15:43] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 13:15:43] "GET /static/images/predicted_values_price_table_ARIMA_1639656938.614462.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2021 13:15:43] "[36mGET /static/images/predicted_values_price_table_ARIMA_1639656938.614462.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dataviz.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pyparsing.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pymongo\\settings.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pymongo\\mongo_client.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\MG.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\data_viz_1.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\application.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\cli.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\dashboard.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\db.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\forms.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\models.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\arima.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\lstm.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

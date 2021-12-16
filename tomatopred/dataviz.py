@@ -12,7 +12,15 @@ from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_
 import logging
 logging.basicConfig(filename='demo.log')
 logging.debug('This message should go to the log file')
-from tomatopred.db import get_db
+import pickle
+
+mod = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Prix3.pkl', 'rb'))
+			
+mod2 = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Production3.pkl', 'rb'))
+
+
+
+
 
 bp = Blueprint('tomatoappdataviz',__name__)
 
@@ -76,11 +84,11 @@ def essai():
     elif optradio16 == "on":
         g1 = graph_proda2
     # elif optradio21 == "on":
-    #     t1 =  tpril
+    #     g1 =  tpril
     # elif optradio22 == "on":
     #     g1 = gpril
     # elif optradio23 == "on":
-    #     t2 = tprol
+    #     g1 = tprol
     # elif optradio24 == "on":
     #     g1 = gprol   
     else:
@@ -99,5 +107,16 @@ def savedata(tapricea, taproda):
     )
     db.commit()
 
+def savemodels_price_ARIMA(mod):
+    db = get_db()
+    db.execute("INSERT INTO models (fichier_model,metrics) VALUES (?,?)",
+        (mod, 'rmse and mae'),
+    )
+    db.commit()
 
-
+def savemodels_pro_ARIMA(mod2):
+    db = get_db()
+    db.execute("INSERT INTO models (fichier_model, metrics) VALUES (?,?)",
+        (mod2,'rmse and mae' ),
+    )
+    db.commit()

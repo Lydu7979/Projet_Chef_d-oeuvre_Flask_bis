@@ -6,6 +6,8 @@ from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_
 import sys
 print(sys.path)
 sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
+sys.path.append('/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
+import os
 
 # @pytest.fixture(scope='module')
 # def new_user():
