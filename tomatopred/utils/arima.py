@@ -9,9 +9,9 @@ import os
 import dataframe_image as dfi
 
 
-mod = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Prix3.pkl', 'rb'))
+mod = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Prix5.pkl', 'rb'))
 			
-mod2 = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Production3.pkl', 'rb'))
+mod2 = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Production5.pkl', 'rb'))
 
 #prix
 def prix_a(nbd):
