@@ -14,12 +14,9 @@ logging.basicConfig(filename='demo.log')
 logging.debug('This message should go to the log file')
 import pickle
 
-mod = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Prix3.pkl', 'rb'))
+mod = pickle.load(open(r'tomatopred/models/modèle_ARIMA_Prix5.pkl', 'rb'))
 			
-mod2 = pickle.load(open(r'tomatopred\models\modèle_ARIMA_Production3.pkl', 'rb'))
-
-
-
+mod2 = pickle.load(open(r'tomatopred/models/modèle_ARIMA_Production5.pkl', 'rb'))
 
 
 bp = Blueprint('tomatoappdataviz',__name__)

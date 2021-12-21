@@ -12,9 +12,9 @@ import dataframe_image as dfi
 import math
 import datetime
 
-mod3 = load_model(r'tomatopred\models\prediction_prix_tomate_lstm_model_v1.h5')
+mod3 = load_model('tomatopred/models/prediction_prix_tomate_lstm_model_v1.h5')
 
-mod4 = load_model(r'tomatopred\models\prediction_production_tomate_lstm_model_v1.h5')
+mod4 = load_model('tomatopred/models/prediction_production_tomate_lstm_model_v1.h5')
 chemin = os.path.join(os.getcwd(),'tomatopred','static','data','TMN.csv')
 D1 = pd.read_csv(chemin, parse_dates=['Date'], dayfirst= True)
 D1.sort_values(by=['Date'], inplace=True, ascending=True) 
