@@ -982,3 +982,5 @@ INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\program
 INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\cli.py', reloading
 INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\lstm.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
