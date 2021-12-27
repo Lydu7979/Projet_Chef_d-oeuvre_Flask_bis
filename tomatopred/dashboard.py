@@ -14,6 +14,7 @@ from flask_login import login_required, current_user
 import super_user
 
 bp = Blueprint('dashboardad',__name__)
+admin = Blueprint('admin', __name__)
 
 @bp.route('/dashboard', methods = ['GET', 'POST'])
 def admin_user():
@@ -29,7 +30,8 @@ def admin_user():
 
     return render_template('dashboard.html', users  = users.to_html())
 
-@bp.route('/dashboard', methods=('GET', 'POST'))
+@admin.route('/admin/dashboard', methods=('GET', 'POST'))
+@login_required
 def admin():
     form = LoginForm(request.form)
     if request.method == 'POST' and form.validate():
@@ -40,7 +42,7 @@ def admin():
             users = pd.DataFrame()
             users = pd.read_sql_query("SELECT usertable.id, usertable.username, usertable.email, prediction.pred_prix, prediction.pred_pro FROM usertable LEFT JOIN prediction ON usertable.id = prediction.id_user ORDER BY usertable.id;", db)
 
-    return render_template('admin/dashboard.html', users  = users.to_html())
+    return render_template('admin/dashboard.html', users  = users.to_html(), form = form)
 
 
 
