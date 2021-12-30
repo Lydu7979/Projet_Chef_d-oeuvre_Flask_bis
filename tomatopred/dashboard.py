@@ -11,7 +11,7 @@ import pandas as pd
 logging.basicConfig(filename='demo.log')
 logging.debug('This message should go to the log file')
 from flask_login import login_required, current_user
-import super_user
+# import super_user
 
 bp = Blueprint('dashboardad',__name__)
 admin = Blueprint('admin', __name__)
@@ -30,19 +30,19 @@ def admin_user():
 
     return render_template('dashboard.html', users  = users.to_html())
 
-@admin.route('/admin/dashboard', methods=('GET', 'POST'))
-@login_required
-def admin():
-    form = LoginForm(request.form)
-    if request.method == 'POST' and form.validate():
-        email = request.form['email']
-        password = request.form['password']
-        db = get_db()
-        if email == super_user.super_login_email and password == super_user.super_pwd:
-            users = pd.DataFrame()
-            users = pd.read_sql_query("SELECT usertable.id, usertable.username, usertable.email, prediction.pred_prix, prediction.pred_pro FROM usertable LEFT JOIN prediction ON usertable.id = prediction.id_user ORDER BY usertable.id;", db)
+# @admin.route('/admin/dashboard', methods=('GET', 'POST'))
+# @login_required
+# def admin():
+#     form = LoginForm(request.form)
+#     if request.method == 'POST' and form.validate():
+#         email = request.form['email']
+#         password = request.form['password']
+#         db = get_db()
+#         if email == super_user.super_login_email and password == super_user.super_pwd:
+#             users = pd.DataFrame()
+#             users = pd.read_sql_query("SELECT usertable.id, usertable.username, usertable.email, prediction.pred_prix, prediction.pred_pro FROM usertable LEFT JOIN prediction ON usertable.id = prediction.id_user ORDER BY usertable.id;", db)
 
-    return render_template('admin/dashboard.html', users  = users.to_html(), form = form)
+#     return render_template('admin/dashboard.html', users  = users.to_html(), form = form)
 
 
 

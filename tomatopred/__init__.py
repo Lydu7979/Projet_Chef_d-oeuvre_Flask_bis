@@ -1,7 +1,8 @@
 from flask import Flask, request, session
 import flask_monitoringdashboard as d
-
 import os
+
+
 
 
 def create_app():
@@ -10,7 +11,8 @@ def create_app():
     app.secret_key = 'xyzdrrrretetetetetete'
     d.config.init_from(envvar='FLASK_MONITORING_DASHBOARD_CONFIG')
     d.config.init_from(file='/Projet_Chef_d-oeuvre_Flask_bis/tomatopred/configt.cfg')
-    d.config.group_by = 8
+    d.config.group_by = lambda : 8
+    # print(request.environ['REMOTE_ADDR'])
     d.bind(app)
     from . import db
     db.init_app(app)

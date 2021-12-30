@@ -984,3 +984,112 @@ INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\program
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\lstm.py', reloading
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:10:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:10:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:10:50] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:11:06] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:11:07] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:11:08] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\arima.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask_monitoringdashboard\\core\\measurement.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:12:46] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:12:47] "GET /static/images/predicted_values_production_graph_ARIMA_1640851937.075557.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:12:47] "[36mGET /static/images/predicted_values_production_graph_ARIMA_1640851937.075557.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:13:21] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:13:21] "GET /static/images/predicted_values_price_table_ARIMA_1640851997.126284.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:13:48] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:27] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:28] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:28] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:28] "GET /dashboard/static/css/app.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:28] "GET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:29] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:30] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:14:30] "GET /dashboard/static/img/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:13] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:13] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:13] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:13] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:13] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:13] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:16:27] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:33] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:33] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:33] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:33] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:33] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:44] "[32mGET /dashboard/endpoint/:endpoint_id:/outliers HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:44] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:45] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 09:30:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:05:21] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\db.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\forms.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:05:42] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:05:43] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:05:43] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:05:43] "[36mGET /static/images/price_and_production.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:06:16] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:06:16] "GET /static/images/predicted_values_price_graph_ARIMA_1640855156.536097.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:06:16] "[36mGET /static/images/predicted_values_price_graph_ARIMA_1640855156.536097.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pyparsing.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:27:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:28:05] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:28:17] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:28:18] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:28:18] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:28:18] "[36mGET /static/images/price_and_production.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask_monitoringdashboard\\core\\measurement.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:29:21] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:29:21] "GET /static/images/production.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 10:29:21] "[36mGET /static/images/production.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:05] "[32mGET /dashboard/endpoint/:endpoint_id:/outliers HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:05] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:05] "GET /dashboard/static/css/app.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:05] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:05] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:06] "GET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:06] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:23:44] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Dec/2021 11:24:00] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pyparsing.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\conftest.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
