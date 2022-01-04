@@ -1097,3 +1097,8 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Forma
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\pyparsing.py', reloading
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [04/Jan/2022 14:33:52] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jan/2022 14:33:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
