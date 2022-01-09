@@ -61,11 +61,12 @@ def test_la():
 
 def test_prixa():
      nbd = 7
-     assert isinstance(prix_a(nbd),pd.DataFrame) is True
+     assert prix_a(nbd),pd.DataFrame is True
 
 
 def test_proa():
      nbd = 7
-     assert isinstance(pro_a(nbd),pd.DataFrame) is True
+     assert pro_a(nbd),pd.DataFrame is True
+     
 
     
