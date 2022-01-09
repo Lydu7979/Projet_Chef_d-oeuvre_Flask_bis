@@ -1102,3 +1102,167 @@ INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\program
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:werkzeug:127.0.0.1 - - [04/Jan/2022 14:33:52] "GET /dashboard HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [04/Jan/2022 14:33:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:56] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:57] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:57] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:57] "GET /dashboard/static/css/app.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:58] "GET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:58] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:59] "GET /dashboard/static/img/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:39:59] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:40:40] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:40:40] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:40:40] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:40:40] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:40:40] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:40:40] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:41:20] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:41:20] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:41:20] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:41:20] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:41:20] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:41:20] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:51:24] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:51:24] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:51:24] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:51:24] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:51:24] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:51:26] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:01] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:01] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:01] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:01] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:01] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:01] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:14] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:14] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:14] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:14] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:14] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:52:14] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:54:50] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:54:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:55:49] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:55:49] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:55:49] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:55:49] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 15:55:49] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:53] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:08:56] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:09:05] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:09:05] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:09:05] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:09:05] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:09:05] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:09:05] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:17:28] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:17:28] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:17:28] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:17:28] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:17:28] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:17:30] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:34] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:34] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:34] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:34] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:34] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:35] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:36] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:36] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:42] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:43] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:43] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:43] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:43] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:19:43] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:52] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:52] "GET /dashboard/static/css/app.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:52] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:52] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:52] "GET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:53] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:21:53] "GET /dashboard/static/img/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:22:54] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:22:54] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:22:54] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:22:54] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:22:54] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:22:55] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:26:59] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\super_user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\application.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:02] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:02] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:02] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:02] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:02] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:02] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:03] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:03] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:14] "POST /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:14] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:14] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:14] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:14] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:35:15] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "GET /dashboard/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[36mGET /dashboard/static/css/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jan/2022 16:36:24] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\test_u1.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\arima.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)

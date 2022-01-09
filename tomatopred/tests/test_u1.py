@@ -1,13 +1,16 @@
+import sys
+print(sys.path)
+sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
+sys.path.append('/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
+
 import pytest
 from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_ARIMA2, graph_pro_ARIMA1, graph_pro_ARIMA2, predict_prix_ARIMA, predict_production_ARIMA
 # from app import create_app, db
 # from app.models import UserModel
 # from config import TestingConfig
-import sys
-print(sys.path)
-sys.path.insert(0, 'C:/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
-sys.path.append('/Users/Simplon/OneDrive/Bureau/Formation/Projet_Chef_d-oeuvre_Flask_bis/tomatopred')
+
 import os
+import pandas as pd
 
 # @pytest.fixture(scope='module')
 # def new_user():
@@ -54,11 +57,15 @@ import os
 
 def test_la():
     nbd = 1
-    assert nbd == 1, "Error "
+    assert nbd == 1, "Error"
 
 def test_prixa():
-    a1 = prix_a()
-    assert a1 == "RRR", "incorrect DataFrame"
+     nbd = 7
+     assert isinstance(prix_a(nbd),pd.DataFrame) is True
 
+
+def test_proa():
+     nbd = 7
+     assert isinstance(pro_a(nbd),pd.DataFrame) is True
 
     

@@ -2,16 +2,12 @@ from flask import Flask, request, session
 import flask_monitoringdashboard as d
 import os
 
-
-
-
 def create_app():
     app = Flask(__name__)
     app.config['DATABASE'] = os.path.join(os.getcwd(),'tomatopred','data','data.db')
     app.secret_key = 'xyzdrrrretetetetetete'
-    d.config.init_from(envvar='FLASK_MONITORING_DASHBOARD_CONFIG')
-    d.config.init_from(file='/Projet_Chef_d-oeuvre_Flask_bis/tomatopred/configt.cfg')
-    d.config.group_by = lambda : 8
+    #d.config.init_from(file='/Projet_Chef_d-oeuvre_Flask_bis/tomatopred/configt.cfg')
+    #d.config.group_by = lambda : 8
     # print(request.environ['REMOTE_ADDR'])
     d.bind(app)
     from . import db
