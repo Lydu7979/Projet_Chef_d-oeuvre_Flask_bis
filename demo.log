@@ -1266,3 +1266,41 @@ INFO:werkzeug: * Restarting with watchdog (windowsapi)
 INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\test_u1.py', reloading
 INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\arima.py', reloading
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:58:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:58:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:58:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:58:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:59:09] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:59:24] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:59:25] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:59:25] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 11:59:25] "[36mGET /static/images/price_and_production.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\forms.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask_monitoringdashboard\\core\\measurement.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:06:08] "[36mGET /static/images/price_and_production.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:07:07] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:07:07] "GET /static/images/predicted_values_price_table_ARIMA_1641812820.233237.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:07:07] "[36mGET /static/images/predicted_values_price_table_ARIMA_1641812820.233237.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\db.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\test_f.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:10:25] "GET /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:11:34] "GET /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:19:29] "[36mGET /static/images/predicted_values_price_table_ARIMA_1641812820.233237.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:19:31] "GET /auth/register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\utils\\arima.py', reloading
+INFO:werkzeug:127.0.0.1 - - [10/Jan/2022 12:19:33] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\test_f.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Simplon\\OneDrive\\Bureau\\Formation\\Projet_Chef_d-oeuvre_Flask_bis\\tomatopred\\tests\\test_f.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)

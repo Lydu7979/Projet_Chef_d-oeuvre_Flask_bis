@@ -8,9 +8,11 @@ from tomatopred.utils.arima import prix_a, pro_a, graph_prix_ARIMA1, graph_prix_
 # from app import create_app, db
 # from app.models import UserModel
 # from config import TestingConfig
-
+from tomatopred.auth import login
 import os
 import pandas as pd
+from tests.conftest import test_client
+from snapshottest_ext.dataframe  import PandasSnapshot
 
 # @pytest.fixture(scope='module')
 # def new_user():
@@ -61,11 +63,31 @@ def test_la():
 
 def test_prixa():
      nbd = 7
-     assert isinstance(prix_a(nbd),pd.DataFrame) is True
-
+     print(prix_a(nbd))
+     assert isinstance(prix_a(nbd),pd.DataFrame) is True #pour vérifier qu'il s'agit bien d'un dataframe
 
 def test_proa():
      nbd = 7
+     print(pro_a(nbd))
      assert isinstance(pro_a(nbd),pd.DataFrame) is True
 
-    
+def test_prixa2():
+     nbd = 7
+     prix_a(nbd)
+     assert prix_a(nbd).all().all(), True #pour vérifier si toutes les valeurs du dataframe existent
+
+def test_pro2():
+     nbd = 7
+     pro_a(nbd)
+     assert pro_a(nbd).all().all(), True
+
+def test_prixa3(snapshot):
+     nbd = 7
+     prix_a(nbd)
+     snapshot.assert_match(PandasSnapshot(prix_a(nbd)))
+
+def test_proa3(snapshot):
+     nbd = 7
+     pro_a(nbd)
+     snapshot.assert_match(PandasSnapshot(prix_a(nbd)))
+
