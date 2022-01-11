@@ -32,6 +32,18 @@ def test_user_register(test_client):
                                           confirm='FlaskI45454'),
                                 follow_redirects=True)
     assert response.status_code == 200
+    
+    
 
 
+    
 
+def test_user_login(test_client):
+    response = test_client.post('/auth/login',
+                                data=dict(
+                                          email='utest@gmail.com',
+                                          password='FlaskI45454',
+                                          ),
+                                follow_redirects=True)
+    assert response.status_code == 200
+    
