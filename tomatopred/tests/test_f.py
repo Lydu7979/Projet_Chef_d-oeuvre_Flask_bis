@@ -36,8 +36,6 @@ def test_user_register(test_client):
     
 
 
-    
-
 def test_user_login(test_client):
     response = test_client.post('/auth/login',
                                 data=dict(
