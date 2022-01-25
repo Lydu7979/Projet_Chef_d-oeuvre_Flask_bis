@@ -1376,3 +1376,26 @@ INFO:werkzeug:127.0.0.1 - - [21/Jan/2022 16:21:05] "POST /data-viz HTTP/1.1" 200
 INFO:werkzeug:127.0.0.1 - - [21/Jan/2022 16:21:05] "GET /static/images/predicted_values_price_table_ARIMA_1642778459.922379.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Jan/2022 16:21:05] "[36mGET /static/images/predicted_values_price_table_ARIMA_1642778459.922379.png HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [21/Jan/2022 16:21:48] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\threading.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:34:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:34:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:37:05] "GET /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:37:20] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:37:22] "GET /application HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:37:22] "GET /static/images/price_and_production.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:37:23] "[36mGET /static/images/price_and_production.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask_monitoringdashboard\\core\\measurement.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\users\\simplon\\appdata\\local\\programs\\python\\python38\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:38:42] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:38:42] "GET /static/images/predicted_values_production_table_ARIMA_1643099919.645414.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:38:42] "[36mGET /static/images/predicted_values_production_table_ARIMA_1643099919.645414.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:39:52] "POST /data-viz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:39:52] "GET /static/images/predicted_values_price_table_ARIMA_1643099989.031339.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:39:52] "[36mGET /static/images/predicted_values_price_table_ARIMA_1643099989.031339.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2022 09:40:27] "GET /dashboard HTTP/1.1" 200 -
