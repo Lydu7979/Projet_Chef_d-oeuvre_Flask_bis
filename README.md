@@ -14,7 +14,7 @@ les colones pour le dataset : date, prix, température minimale, température ma
 Data visualisation.
 
 ETAPE 2: Modélisation
-5 modèles testés : ARIMA, Prophet, LSTM, Régression linéaire et Random Forest. metrics choisis: RMSE et MAE Pour les 2 premiers modèles, prédiction du prix et de la production dans 7 jours.
+5 modèles testés : ARIMA, Prophet, LSTM, Régression linéaire et Random Forest. metrics choisis: RMSE et MAE Pour les 3 premiers modèles, prédiction du prix et de la production dans 7 jours.
 
 ETAPE 3: Application
 L'application affichera la prédiction du prix et de la production de tomates dans 7 jours, avec le modèle ARIMA et/ou le modèle lstm et la librairie Flask.
